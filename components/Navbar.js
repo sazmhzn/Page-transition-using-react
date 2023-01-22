@@ -7,7 +7,7 @@ export default function Navbar() {
         <Link href={"/"}>
           <li>Home</li>
         </Link>
-        <Link href={"/contact"}>
+        <Link href={"/Contact"}>
           <li>Contact</li>
         </Link>
       </ul>
