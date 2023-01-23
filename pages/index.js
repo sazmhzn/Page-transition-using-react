@@ -7,6 +7,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75, ease: "easeOut" }}
+      className="text-gray-900 absolute top-0 left-0 w-full h-full px-16 lg:px-48  bg-orange-100"
     >
       <Head>
         <title>Create Next App</title>
@@ -15,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="my-96 p-1 ">
+        <div className="my-96 p-1">
           <h1 className="text-6xl text-center lg:text-right lg:text-9xl">
             Happy Pickle
           </h1>
