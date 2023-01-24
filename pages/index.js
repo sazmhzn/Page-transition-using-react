@@ -4,10 +4,10 @@ import { motion as m } from "framer-motion";
 export default function Home() {
   return (
     <m.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ y: "100%" }}
+      animate={{ y: "0%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
-      exit={{opacity: 0}}
+      exit={{ opacity: 1 }}
       className="text-gray-900 absolute top-0 left-0 w-full h-full px-16 lg:px-48  bg-orange-100"
     >
       <Head>
@@ -17,10 +17,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="my-96 p-1">
-          <h1 className="text-6xl text-center lg:text-right lg:text-9xl">
+        <div className="my-96 p-1 overflow-hidden">
+          <m.h1
+            animate={{ y: "0" }}
+            initial={{ y: "100%" }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="text-6xl text-center lg:text-right lg:text-9xl"
+          >
             Happy Pickle
-          </h1>
+          </m.h1>
         </div>
         <div className="flex justify-between">
           <div>
